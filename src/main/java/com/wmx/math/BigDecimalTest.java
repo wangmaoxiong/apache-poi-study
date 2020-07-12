@@ -14,6 +14,27 @@ import java.math.RoundingMode;
 public class BigDecimalTest {
 
     /**
+     * 演示金额计算时为什么不能使用浮点数 fouat 与 double，而应该使用 BigDecimal
+     * 1、比如预期应该是 0.1+0.2=0.3，9.9F*100.0F=990.00F
+     */
+    @Test
+    public void test0() {
+        double d1 = 0.1;
+        double d2 = 0.2;
+        System.out.println(d1 + d2);//0.30000000000000004
+
+        float f1 = 9.9F;
+        float f2 = 100.0F;
+        System.out.println(f1 * f2);//989.99994
+
+        BigDecimal d3 = BigDecimal.valueOf(d1).add(BigDecimal.valueOf(d2));
+        BigDecimal multiply = BigDecimal.valueOf(f1).multiply(BigDecimal.valueOf(f2));
+        BigDecimal f3 = multiply.setScale(2, RoundingMode.HALF_UP);
+        System.out.println(d3);//0.3
+        System.out.println(f3);//990.00
+    }
+
+    /**
      * 演示常量
      */
     @Test
