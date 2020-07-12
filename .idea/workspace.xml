@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="efa1ddd9-d46d-4f1a-85e1-f350799929c3" name="Default Changelist" comment="Apache POI 操作 excel">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="efa1ddd9-d46d-4f1a-85e1-f350799929c3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wmx/math/BigIntegerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wmx/math/BigDecimalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wmx/math/BigDecimalTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -18,23 +16,27 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wmx/math/BigDecimalTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wmx/math/BigIntegerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+            <state relative-caret-position="93">
+              <caret line="74" column="30" selection-start-line="74" selection-start-column="30" selection-end-line="74" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#180#204#0" expanded="true" />
+                <element signature="e#150#174#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../../software/Java/jdk1.8.0_131/src.zip!/java/math/RoundingMode.java">
+        <entry file="jar://$PROJECT_DIR$/../../../software/Java/jdk1.8.0_131/src.zip!/java/math/BigInteger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-320">
-              <caret line="218" column="4" selection-start-line="218" selection-start-column="4" selection-end-line="218" selection-end-column="4" />
+            <state relative-caret-position="77">
+              <caret line="680" selection-start-line="680" selection-end-line="689" selection-end-column="27" />
+              <folding>
+                <element signature="e#23600#23601#0" expanded="true" />
+                <element signature="e#23649#23650#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -90,6 +92,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/wmx/math/Arith.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wmx/math/BigDecimalUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wmx/math/BigDecimalTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wmx/math/BigIntegerTest.java" />
       </list>
     </option>
   </component>
@@ -179,6 +182,16 @@
               <item name="wmx" type="462c0819:PsiDirectoryNode" />
               <item name="math" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="apache-poi-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apache-poi-study" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="wmx" type="462c0819:PsiDirectoryNode" />
+              <item name="poi" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -190,7 +203,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1594560840519" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1594564903666" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -227,8 +240,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BigDecimalTest.test0">
-    <configuration name="BigDecimalTest.test0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BigIntegerTest.test5">
+    <configuration name="BigIntegerTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="apache-poi-study" />
       <extension name="coverage">
         <pattern>
@@ -237,14 +250,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.wmx.math" />
-      <option name="MAIN_CLASS_NAME" value="com.wmx.math.BigDecimalTest" />
-      <option name="METHOD_NAME" value="test0" />
+      <option name="MAIN_CLASS_NAME" value="com.wmx.math.BigIntegerTest" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BigDecimalTest.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BigIntegerTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="apache-poi-study" />
       <extension name="coverage">
         <pattern>
@@ -253,14 +266,46 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.wmx.math" />
-      <option name="MAIN_CLASS_NAME" value="com.wmx.math.BigDecimalTest" />
+      <option name="MAIN_CLASS_NAME" value="com.wmx.math.BigIntegerTest" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BigIntegerTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="apache-poi-study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wmx.math.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.wmx.math" />
+      <option name="MAIN_CLASS_NAME" value="com.wmx.math.BigIntegerTest" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BigIntegerTest.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="apache-poi-study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wmx.math.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.wmx.math" />
+      <option name="MAIN_CLASS_NAME" value="com.wmx.math.BigIntegerTest" />
       <option name="METHOD_NAME" value="test4" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BigDecimalTest.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BigIntegerTest.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="apache-poi-study" />
       <extension name="coverage">
         <pattern>
@@ -269,40 +314,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.wmx.math" />
-      <option name="MAIN_CLASS_NAME" value="com.wmx.math.BigDecimalTest" />
+      <option name="MAIN_CLASS_NAME" value="com.wmx.math.BigIntegerTest" />
       <option name="METHOD_NAME" value="test5" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BigDecimalTest.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="apache-poi-study" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wmx.math.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.wmx.math" />
-      <option name="MAIN_CLASS_NAME" value="com.wmx.math.BigDecimalTest" />
-      <option name="METHOD_NAME" value="test6" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BigDecimalTest.test7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="apache-poi-study" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wmx.math.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.wmx.math" />
-      <option name="MAIN_CLASS_NAME" value="com.wmx.math.BigDecimalTest" />
-      <option name="METHOD_NAME" value="test7" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -310,11 +323,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BigDecimalTest.test0" />
-        <item itemvalue="JUnit.BigDecimalTest.test7" />
-        <item itemvalue="JUnit.BigDecimalTest.test6" />
-        <item itemvalue="JUnit.BigDecimalTest.test4" />
-        <item itemvalue="JUnit.BigDecimalTest.test5" />
+        <item itemvalue="JUnit.BigIntegerTest.test5" />
+        <item itemvalue="JUnit.BigIntegerTest.test4" />
+        <item itemvalue="JUnit.BigIntegerTest.test3" />
+        <item itemvalue="JUnit.BigIntegerTest.test2" />
+        <item itemvalue="JUnit.BigIntegerTest.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -337,7 +350,7 @@
       <workItem from="1594214067383" duration="2283000" />
       <workItem from="1594259366220" duration="23578000" />
       <workItem from="1594344018002" duration="13280000" />
-      <workItem from="1594516076002" duration="14725000" />
+      <workItem from="1594516076002" duration="18283000" />
     </task>
     <task id="LOCAL-00001" summary="BigDecimal 不可变的带符号小数">
       <created>1594542990656</created>
@@ -353,43 +366,50 @@
       <option name="project" value="LOCAL" />
       <updated>1594543016751</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Apache POI 操作 excel">
+      <created>1594560846787</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1594560846787</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BigDecimalTest_test7 - 2020.07.12 at 21h 17m 58s.xml">
-      <configuration name="BigDecimalTest.test7" configurationId="JUnit" />
+    <history-entry file="BigIntegerTest_test5 - 2020.07.12 at 22h 34m 33s.xml">
+      <configuration name="BigIntegerTest.test5" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BigDecimalTest_test7 - 2020.07.12 at 21h 18m 06s.xml">
-      <configuration name="BigDecimalTest.test7" configurationId="JUnit" />
+    <history-entry file="BigIntegerTest_test5 - 2020.07.12 at 22h 35m 45s.xml">
+      <configuration name="BigIntegerTest.test5" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BigDecimalTest_test7 - 2020.07.12 at 21h 18m 15s.xml">
-      <configuration name="BigDecimalTest.test7" configurationId="JUnit" />
+    <history-entry file="BigIntegerTest_test5 - 2020.07.12 at 22h 38m 25s.xml">
+      <configuration name="BigIntegerTest.test5" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BigDecimalTest_test7 - 2020.07.12 at 21h 18m 25s.xml">
-      <configuration name="BigDecimalTest.test7" configurationId="JUnit" />
+    <history-entry file="BigIntegerTest_test5 - 2020.07.12 at 22h 38m 58s.xml">
+      <configuration name="BigIntegerTest.test5" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BigDecimalTest_test7 - 2020.07.12 at 21h 21m 36s.xml">
-      <configuration name="BigDecimalTest.test7" configurationId="JUnit" />
+    <history-entry file="BigIntegerTest_test5 - 2020.07.12 at 22h 39m 05s.xml">
+      <configuration name="BigIntegerTest.test5" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BigDecimalTest_test7 - 2020.07.12 at 21h 21m 42s.xml">
-      <configuration name="BigDecimalTest.test7" configurationId="JUnit" />
+    <history-entry file="BigIntegerTest_test5 - 2020.07.12 at 22h 39m 22s.xml">
+      <configuration name="BigIntegerTest.test5" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BigDecimalTest_test7 - 2020.07.12 at 21h 25m 02s.xml">
-      <configuration name="BigDecimalTest.test7" configurationId="JUnit" />
+    <history-entry file="BigIntegerTest_test5 - 2020.07.12 at 22h 39m 28s.xml">
+      <configuration name="BigIntegerTest.test5" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BigDecimalTest_test0 - 2020.07.12 at 21h 25m 20s.xml">
-      <configuration name="BigDecimalTest.test0" configurationId="JUnit" />
+    <history-entry file="BigIntegerTest_test5 - 2020.07.12 at 22h 40m 01s.xml">
+      <configuration name="BigIntegerTest.test5" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BigDecimalTest_test0 - 2020.07.12 at 21h 27m 41s.xml">
-      <configuration name="BigDecimalTest.test0" configurationId="JUnit" />
+    <history-entry file="BigIntegerTest_test5 - 2020.07.12 at 22h 40m 49s.xml">
+      <configuration name="BigIntegerTest.test5" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BigDecimalTest_test0 - 2020.07.12 at 21h 28m 23s.xml">
-      <configuration name="BigDecimalTest.test0" configurationId="JUnit" />
+    <history-entry file="BigIntegerTest_test5 - 2020.07.12 at 22h 41m 00s.xml">
+      <configuration name="BigIntegerTest.test5" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64388000" />
+    <option name="totallyTimeSpent" value="67946000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -403,7 +423,7 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32991204" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37683284" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37243402" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.44868034" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -463,27 +483,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/4.1.0/poi-4.1.0-sources.jar!/org/apache/poi/ss/usermodel/FillPatternType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/4.1.0/poi-4.1.0-sources.jar!/org/apache/poi/hssf/util/HSSFColor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="62" column="14" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/4.1.0/poi-4.1.0-sources.jar!/org/apache/poi/poifs/filesystem/POIFSFileSystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="828" column="38" selection-start-line="827" selection-start-column="11" selection-end-line="828" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/4.1.0/poi-4.1.0-sources.jar!/org/apache/poi/hssf/record/BoundSheetRecord.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -782,13 +781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../software/Java/jdk1.8.0_131/src.zip!/java/lang/Double.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="500" column="25" selection-start-line="500" selection-start-column="25" selection-end-line="500" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../../software/Java/jdk1.8.0_131/src.zip!/java/lang/Long.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
@@ -863,13 +855,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../software/Java/jdk1.8.0_131/src.zip!/java/lang/Double.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="503" lean-forward="true" selection-start-line="503" selection-end-line="503" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wmx/math/BigDecimalTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+        <state relative-caret-position="-228">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#180#204#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../software/Java/jdk1.8.0_131/src.zip!/java/util/Random.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="134" column="11" selection-start-line="134" selection-start-column="11" selection-end-line="134" selection-end-column="11" />
+          <folding>
+            <element signature="e#3504#3505#0" expanded="true" />
+            <element signature="e#3562#3563#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../software/Java/jdk1.8.0_131/src.zip!/java/math/BigInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="680" selection-start-line="680" selection-end-line="689" selection-end-column="27" />
+          <folding>
+            <element signature="e#23600#23601#0" expanded="true" />
+            <element signature="e#23649#23650#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wmx/math/BigIntegerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="74" column="30" selection-start-line="74" selection-start-column="30" selection-end-line="74" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#150#174#0" expanded="true" />
           </folding>
         </state>
       </provider>
