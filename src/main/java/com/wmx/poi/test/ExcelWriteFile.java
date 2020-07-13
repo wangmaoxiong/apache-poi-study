@@ -536,14 +536,4 @@ public class ExcelWriteFile {
         cellStyle.setAlignment(align);
         cell.setCellStyle(cellStyle);
     }
-
-    @Test
-    public void test1() {
-        BigDecimal bigDecimal1 = new BigDecimal(11);
-        BigDecimal bigDecimal2 = new BigDecimal(-11);
-        BigDecimal bigDecimal3 = new BigDecimal(0);
-        System.out.println(bigDecimal1.compareTo(BigDecimal.ZERO));
-        System.out.println(bigDecimal2.compareTo(BigDecimal.ZERO));
-        System.out.println(bigDecimal3.compareTo(BigDecimal.ZERO));
-    }
 }
