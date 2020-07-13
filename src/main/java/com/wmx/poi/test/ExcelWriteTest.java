@@ -15,16 +15,14 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.math.BigDecimal;
 import java.util.*;
 
 /**
- * Excel 工具类
- * 实际中仍然需要根据情况进行改写，下面以熟悉 API 为主
+ * Excel 写测试类
  * 官网在线示例地址：https://svn.apache.org/repos/asf/poi/trunk/src/examples/src/org/apache/poi/hssf/usermodel/examples/
  */
 @SuppressWarnings("all")
-public class ExcelWriteFile {
+public class ExcelWriteTest {
 
     //文件输出路径
     private String outPath;

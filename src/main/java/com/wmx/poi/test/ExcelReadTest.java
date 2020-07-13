@@ -8,6 +8,9 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 /**
+ * Excel 读测试类
+ * 官网在线示例地址：https://svn.apache.org/repos/asf/poi/trunk/src/examples/src/org/apache/poi/hssf/usermodel/examples/
+ *
  * @author wangMaoXiong
  * @version 1.0
  * @date 2020/7/9 21:03
