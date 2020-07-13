@@ -1,4 +1,4 @@
-package com.wmx.poi.test;
+package com.wmx.poi.test.excel;
 
 import org.apache.poi.hssf.usermodel.HSSFComment;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;

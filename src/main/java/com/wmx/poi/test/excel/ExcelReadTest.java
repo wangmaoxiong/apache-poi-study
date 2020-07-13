@@ -1,4 +1,4 @@
-package com.wmx.poi.test;
+package com.wmx.poi.test.excel;
 
 import org.apache.poi.ss.usermodel.*;
 import org.junit.Test;
