@@ -32,8 +32,9 @@ public class ExcelReadTest {
             File xlsFile = new File("excel1.xls");//被读取的 excel 文件
             fileInputStream = new FileInputStream(xlsFile);
             /**
-             * WorkbookFactory 工厂的 create 方法从给定的输入流创建适当的 HSSFWorkbook 或者 XSSFWorkbook。
-             * 从而避免了 excel 文件的版本兼容性问题
+             * 1、WorkbookFactory 工厂的 create 方法会自动根据 excel 文件类型创建 HSSFWorkbook 或者 XSSFWorkbook
+             * 2、HSSFWorkbook支持 97-03 版本的 .xls 文件，XSSFWorkbook 支持 07 版本的 .xlsx 文件
+             * 3、这样能避免 excel 文件的版本兼容性问题
              */
             workbook = WorkbookFactory.create(new FileInputStream(xlsFile));
             int numberOfSheets = workbook.getNumberOfSheets();//获取工作簿中电子表格的数量
