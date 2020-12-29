@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="efa1ddd9-d46d-4f1a-85e1-f350799929c3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wmx/poi/word/HeaderFooterTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wmx/poi/word/SimpleDocument.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -16,23 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-examples/4.1.0/poi-examples-4.1.0-sources.jar!/org/apache/poi/xwpf/usermodel/examples/HeaderFooterTable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1710">
-              <caret line="105" selection-start-line="42" selection-start-column="4" selection-end-line="105" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wmx/poi/word/HeaderFooterTable.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wmx/poi/word/SimpleDocument.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="76" column="53" selection-start-line="76" selection-start-column="53" selection-end-line="76" selection-end-column="53" />
+            <state relative-caret-position="72">
+              <caret line="65" column="24" lean-forward="true" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,13 +28,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wmx/poi/word/BetterHeaderFooterExample.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/4.1.0/poi-ooxml-4.1.0-sources.jar!/org/apache/poi/xwpf/usermodel/XWPFParagraph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="54" column="63" lean-forward="true" selection-start-line="50" selection-start-column="8" selection-end-line="54" selection-end-column="63" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="144">
+              <caret line="871" column="16" selection-start-line="871" selection-start-column="16" selection-end-line="871" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/4.1.0/poi-ooxml-4.1.0-sources.jar!/org/apache/poi/xwpf/usermodel/LineSpacingRule.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="362">
+              <caret line="48" column="12" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -74,11 +67,20 @@
       <find>remainder</find>
       <find>DEF_DIV_SCALE</find>
       <find>setCellValue</find>
+      <find>doc</find>
+      <find>p1</find>
+      <find>XWPFParagraph</find>
+      <find>r1</find>
+      <find>jumped</find>
+      <find>setTextPosition</find>
     </findStrings>
     <replaceStrings>
       <replace>OutlineTest</replace>
       <replace>ExcelReadTest</replace>
       <replace>workbook</replace>
+      <replace>document</replace>
+      <replace>paragraph</replace>
+      <replace>xwpfRun</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -113,6 +115,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/wmx/poi/word/ChartFromScratch.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/wmx/poi/word/HeaderFooterTable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wmx/poi/word/SimpleDocument.java" />
       </list>
     </option>
   </component>
@@ -307,7 +310,8 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1609244303586" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1609247441443" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -345,7 +349,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.HeaderFooterTable">
+  <component name="RunManager" selected="Application.SimpleDocument">
     <configuration name="BetterHeaderFooterExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wmx.poi.word.BetterHeaderFooterExample" />
       <module name="apache-poi-study" />
@@ -372,8 +376,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Word2Forrest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wmx.poi.word.Word2Forrest" />
+    <configuration name="SimpleDocument" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wmx.poi.word.SimpleDocument" />
       <module name="apache-poi-study" />
       <extension name="coverage">
         <pattern>
@@ -385,18 +389,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WangTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Word2Forrest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wmx.poi.word.Word2Forrest" />
       <module name="apache-poi-study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wmx.other.*" />
+          <option name="PATTERN" value="com.wmx.poi.word.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.wmx.other" />
-      <option name="MAIN_CLASS_NAME" value="com.wmx.other.WangTest" />
-      <option name="METHOD_NAME" value="test2" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -419,11 +420,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SimpleDocument" />
         <item itemvalue="Application.HeaderFooterTable" />
         <item itemvalue="Application.BetterHeaderFooterExample" />
         <item itemvalue="Application.Word2Forrest" />
         <item itemvalue="JUnit.WangTest.test3" />
-        <item itemvalue="JUnit.WangTest.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -455,7 +456,7 @@
       <workItem from="1595294018855" duration="10000" />
       <workItem from="1598490179462" duration="207000" />
       <workItem from="1607912874586" duration="2114000" />
-      <workItem from="1609239277369" duration="3474000" />
+      <workItem from="1609239277369" duration="6617000" />
     </task>
     <task id="LOCAL-00001" summary="BigDecimal 不可变的带符号小数">
       <created>1594542990656</created>
@@ -555,7 +556,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609243414425</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="页眉、页眉中插入表格演示">
+      <created>1609244337302</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1609244337302</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -591,13 +599,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86959000" />
+    <option name="totallyTimeSpent" value="90102000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31568363" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31568363" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -605,7 +613,7 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32991204" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29032257" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29178885" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.44868034" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -644,7 +652,8 @@
     <MESSAGE value="Apache POI 操作 excel" />
     <MESSAGE value="演示如何使用HSLF将每张幻灯片转换为PNG图像" />
     <MESSAGE value="页眉页脚演示" />
-    <option name="LAST_COMMIT_MESSAGE" value="页眉页脚演示" />
+    <MESSAGE value="页眉、页眉中插入表格演示" />
+    <option name="LAST_COMMIT_MESSAGE" value="页眉、页眉中插入表格演示" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -671,29 +680,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.13/junit-4.13.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.13/junit-4.13.jar!/org/junit/runners/ParentRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="242" selection-start-line="242" selection-end-line="242" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.13/junit-4.13.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/software/Java/jdk1.8.0_131/src.zip!/java/math/MathContext.java" />
-    <entry file="jar://D:/software/Java/jdk1.8.0_131/src.zip!/java/math/BigDecimal.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wmx/math/BigDecimalUtils.java" />
     <entry file="jar://D:/software/Java/jdk1.8.0_131/src.zip!/java/math/RoundingMode.java" />
     <entry file="jar://D:/software/Java/jdk1.8.0_131/src.zip!/java/lang/Double.java" />
@@ -877,20 +863,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/4.1.0/poi-ooxml-4.1.0-sources.jar!/org/apache/poi/xwpf/usermodel/XWPFRun.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="68" column="74" lean-forward="true" selection-start-line="68" selection-start-column="3" selection-end-line="68" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/4.1.0/poi-ooxml-4.1.0-sources.jar!/org/apache/poi/xwpf/usermodel/XWPFDocument.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="486" column="40" selection-start-line="486" selection-start-column="7" selection-end-line="486" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/4.1.0/poi-4.1.0-sources.jar!/org/apache/poi/wp/usermodel/HeaderFooterType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
@@ -902,13 +874,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="139">
           <caret line="319" column="17" selection-start-line="319" selection-start-column="17" selection-end-line="319" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/4.1.0/poi-ooxml-4.1.0-sources.jar!/org/apache/poi/xwpf/usermodel/XWPFParagraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="471" column="16" selection-start-line="471" selection-start-column="16" selection-end-line="471" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -986,20 +951,85 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-examples/4.1.0/poi-examples-4.1.0-sources.jar!/org/apache/poi/xwpf/usermodel/examples/SimpleDocument.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="33" column="61" lean-forward="true" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/4.1.0/poi-ooxml-4.1.0-sources.jar!/org/apache/poi/xwpf/usermodel/XWPFDocument.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="836" column="47" lean-forward="true" selection-start-line="836" selection-start-column="7" selection-end-line="836" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wmx/poi/word/BetterHeaderFooterExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="54" column="63" lean-forward="true" selection-start-line="50" selection-start-column="8" selection-end-line="54" selection-end-column="63" />
+        <state relative-caret-position="148">
+          <caret line="47" column="41" lean-forward="true" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/4.1.0/poi-ooxml-4.1.0-sources.jar!/org/apache/poi/xwpf/usermodel/ParagraphAlignment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="34" column="8" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/4.1.0/poi-ooxml-4.1.0-sources.jar!/org/apache/poi/xwpf/usermodel/XWPFRun.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="990" column="16" selection-start-line="990" selection-start-column="16" selection-end-line="990" selection-end-column="16" />
+          <folding>
+            <element signature="e#34969#34970#0" expanded="true" />
+            <element signature="e#34999#35000#0" expanded="true" />
+            <element signature="e#37293#37294#0" expanded="true" />
+            <element signature="e#37323#37324#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/4.1.0/poi-ooxml-4.1.0-sources.jar!/org/apache/poi/xwpf/usermodel/BreakClear.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="81" column="12" lean-forward="true" selection-start-line="79" selection-start-column="4" selection-end-line="81" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wmx/poi/word/HeaderFooterTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="76" column="53" selection-start-line="76" selection-start-column="53" selection-end-line="76" selection-end-column="53" />
+        <state relative-caret-position="203">
+          <caret line="79" column="63" lean-forward="true" selection-start-line="75" selection-start-column="8" selection-end-line="79" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/4.1.0/poi-ooxml-4.1.0-sources.jar!/org/apache/poi/xwpf/usermodel/LineSpacingRule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="48" column="12" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/4.1.0/poi-ooxml-4.1.0-sources.jar!/org/apache/poi/xwpf/usermodel/XWPFParagraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="871" column="16" selection-start-line="871" selection-start-column="16" selection-end-line="871" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wmx/poi/word/SimpleDocument.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="65" column="24" lean-forward="true" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
