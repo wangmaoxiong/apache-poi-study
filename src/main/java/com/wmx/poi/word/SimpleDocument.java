@@ -81,6 +81,7 @@ public class SimpleDocument {
         //设置文本位置
         xwpfRun3.setTextPosition(30);
         xwpfRun3.setText("一、持续抓好常态化疫情防控。各级各部门要坚持常态化精准防控和局部应急处置有机结合，控制传染源、切断传播途径、保护易感人群。克服麻痹思想、松劲心态，毫不放松抓好\"外防输入、内防反弹\"工作，减少\"两节\"期间人员流动和聚集，严防死守，确保不出现规模性输入和反弹。要加强大型会议活动规范化管理，从严控制，能不举行的尽量不举行，尽量精简人员聚集性活动，对确需举办的相关活动，要做好工作预案，落实防控措施。坚持\"人\"\"物\"同防，落实早发现、早报告、早隔离、早治疗防控要求，规范做好直接接触进口物品人员的个人防护、日常监测和定期核酸检测，对重点场所采取严格的环境监测和卫生措施，落实重点人群\"应检尽检\"。发挥发热门诊等\"哨点\"作用，强化\"两节\"期间医疗检验、院感控制、疫情处置等工作。加强健康教育，引导群众坚持科学佩戴口罩、保持社交距离、勤洗手等良好习惯。");
+        xwpfRun3.setFontFamily("宋体");
         //段落内容隔断，新内容会从下一页开始
         xwpfRun3.addBreak(BreakType.PAGE);
         xwpfRun3.setText("No more; and by a sleep to say we end The heart-ache and the thousand natural shocks That flesh is heir to, 'tis a consummation Devoutly to be wish'd. To die, to sleep; To sleep: perchance to dream: ay, there's the rub; .......");
@@ -90,6 +91,7 @@ public class SimpleDocument {
         XWPFRun xwpfRun5 = xwpfParagraph3.createRun();
         xwpfRun5.setTextPosition(-10);
         xwpfRun5.setText("原标题：如何做好元旦春节期间十项工作，湖南省“两办”重要通知来了！");
+        xwpfRun5.setFontFamily("宋体");
         //添加回车符
         xwpfRun5.addCarriageReturn();
         xwpfRun5.addCarriageReturn();
