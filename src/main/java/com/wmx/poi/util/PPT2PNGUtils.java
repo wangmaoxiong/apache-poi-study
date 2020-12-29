@@ -36,7 +36,7 @@ import java.util.TreeSet;
 import java.util.logging.Logger;
 
 /**
- * Demonstrates how you can use HSLF to convert each slide into a PNG image
+ * 演示如何使用HSLF将每张幻灯片转换为PNG图像
  */
 public class PPT2PNGUtils extends PPTX2PNG {
     private static Logger logger = Logger.getAnonymousLogger();

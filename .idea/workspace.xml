@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="efa1ddd9-d46d-4f1a-85e1-f350799929c3" name="Default Changelist" comment="">
+    <list default="true" id="efa1ddd9-d46d-4f1a-85e1-f350799929c3" name="Default Changelist" comment="Apache POI 操作 excel">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wmx/other/WangTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wmx/poi/test/CellComments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wmx/poi/test/CellComments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wmx/poi/test/EventExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wmx/poi/test/ExcelReadFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wmx/poi/util/PPT2PNGUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wmx/poi/util/PPT2PNGUtils.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -17,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wmx/poi/test/CellComments.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wmx/other/WangTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+            <state relative-caret-position="120">
+              <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -30,13 +29,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wmx/poi/test/ExcelReadTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wmx/poi/test/excel/CellComments.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1074">
-              <caret line="75" column="44" lean-forward="true" selection-start-line="75" selection-start-column="44" selection-end-line="75" selection-end-column="44" />
+            <state relative-caret-position="-1178">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wmx/poi/util/PPT2PNGUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -62,6 +70,7 @@
       <find>max</find>
       <find>remainder</find>
       <find>DEF_DIV_SCALE</find>
+      <find>setCellValue</find>
     </findStrings>
     <replaceStrings>
       <replace>OutlineTest</replace>
@@ -76,7 +85,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/wmx/poi/util/PPTXUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wmx/poi/util/PPT2PNGUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wmx/poi/util/ExcelUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wmx/poi/test/ExcelUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wmx/poi/test/OutlineTest.java" />
@@ -93,6 +101,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/wmx/poi/test/ExcelWriteTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wmx/poi/test/ExcelReadTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wmx/poi/test/CellComments.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wmx/poi/test/excel/ExcelReadTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wmx/poi/test/excel/ExcelReadTest2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wmx/other/WangTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wmx/poi/util/PPT2PNGUtils.java" />
       </list>
     </option>
   </component>
@@ -120,16 +132,18 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="45" />
-    <option name="y" value="70" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
     <option name="width" value="1750" />
-    <option name="height" value="980" />
+    <option name="height" value="995" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -193,19 +207,40 @@
               <item name="poi" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="apache-poi-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apache-poi-study" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="wmx" type="462c0819:PsiDirectoryNode" />
+              <item name="poi" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="excel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apache-poi-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apache-poi-study" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="wmx" type="462c0819:PsiDirectoryNode" />
+              <item name="poi" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1594642980238" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../apache-study" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1609239727773" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -241,82 +276,82 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BigIntegerTest.test5">
-    <configuration name="BigIntegerTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.WangTest.test3">
+    <configuration name="ExcelReadTest2.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="apache-poi-study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wmx.math.*" />
+          <option name="PATTERN" value="com.wmx.poi.test.excel.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.wmx.math" />
-      <option name="MAIN_CLASS_NAME" value="com.wmx.math.BigIntegerTest" />
+      <option name="PACKAGE_NAME" value="com.wmx.poi.test.excel" />
+      <option name="MAIN_CLASS_NAME" value="com.wmx.poi.test.excel.ExcelReadTest2" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BigIntegerTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ExcelReadTest.readExcelTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="apache-poi-study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wmx.math.*" />
+          <option name="PATTERN" value="com.wmx.poi.test.excel.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.wmx.math" />
-      <option name="MAIN_CLASS_NAME" value="com.wmx.math.BigIntegerTest" />
+      <option name="PACKAGE_NAME" value="com.wmx.poi.test.excel" />
+      <option name="MAIN_CLASS_NAME" value="com.wmx.poi.test.excel.ExcelReadTest" />
+      <option name="METHOD_NAME" value="readExcelTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WangTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="apache-poi-study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wmx.other.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.wmx.other" />
+      <option name="MAIN_CLASS_NAME" value="com.wmx.other.WangTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WangTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="apache-poi-study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wmx.other.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.wmx.other" />
+      <option name="MAIN_CLASS_NAME" value="com.wmx.other.WangTest" />
       <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BigIntegerTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WangTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="apache-poi-study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wmx.math.*" />
+          <option name="PATTERN" value="com.wmx.other.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.wmx.math" />
-      <option name="MAIN_CLASS_NAME" value="com.wmx.math.BigIntegerTest" />
+      <option name="PACKAGE_NAME" value="com.wmx.other" />
+      <option name="MAIN_CLASS_NAME" value="com.wmx.other.WangTest" />
       <option name="METHOD_NAME" value="test3" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BigIntegerTest.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="apache-poi-study" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wmx.math.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.wmx.math" />
-      <option name="MAIN_CLASS_NAME" value="com.wmx.math.BigIntegerTest" />
-      <option name="METHOD_NAME" value="test4" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BigIntegerTest.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="apache-poi-study" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wmx.math.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.wmx.math" />
-      <option name="MAIN_CLASS_NAME" value="com.wmx.math.BigIntegerTest" />
-      <option name="METHOD_NAME" value="test5" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -324,11 +359,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BigIntegerTest.test5" />
-        <item itemvalue="JUnit.BigIntegerTest.test4" />
-        <item itemvalue="JUnit.BigIntegerTest.test3" />
-        <item itemvalue="JUnit.BigIntegerTest.test2" />
-        <item itemvalue="JUnit.BigIntegerTest.test1" />
+        <item itemvalue="JUnit.WangTest.test3" />
+        <item itemvalue="JUnit.WangTest.test2" />
+        <item itemvalue="JUnit.WangTest.test1" />
+        <item itemvalue="JUnit.ExcelReadTest2.test1" />
+        <item itemvalue="JUnit.ExcelReadTest.readExcelTest" />
       </list>
     </recent_temporary>
   </component>
@@ -352,7 +387,15 @@
       <workItem from="1594259366220" duration="23578000" />
       <workItem from="1594344018002" duration="13280000" />
       <workItem from="1594516076002" duration="18426000" />
-      <workItem from="1594638365240" duration="2721000" />
+      <workItem from="1594638365240" duration="2911000" />
+      <workItem from="1595058975149" duration="4570000" />
+      <workItem from="1595076772389" duration="38000" />
+      <workItem from="1595208625377" duration="2901000" />
+      <workItem from="1595232638915" duration="2645000" />
+      <workItem from="1595294018855" duration="10000" />
+      <workItem from="1598490179462" duration="207000" />
+      <workItem from="1607912874586" duration="2114000" />
+      <workItem from="1609239277369" duration="450000" />
     </task>
     <task id="LOCAL-00001" summary="BigDecimal 不可变的带符号小数">
       <created>1594542990656</created>
@@ -403,49 +446,84 @@
       <option name="project" value="LOCAL" />
       <updated>1594642524388</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Apache POI 操作 excel">
+      <created>1594642973271</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1594642973271</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Apache POI 操作 excel">
+      <created>1594643026435</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1594643026435</updated>
+    </task>
+    <task id="LOCAL-00010" summary="操作结束时关闭流，释放资源。">
+      <created>1595060291425</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1595060291425</updated>
+    </task>
+    <task id="LOCAL-00011" summary="迭代器的方式，且判断单元格内容数据类型">
+      <created>1595062661441</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1595062661441</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Apache POI 操作 excel">
+      <created>1595062682143</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1595062682143</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BigIntegerTest_test5 - 2020.07.12 at 22h 34m 33s.xml">
-      <configuration name="BigIntegerTest.test5" configurationId="JUnit" />
+    <history-entry file="WangTest_test1 - 2020.07.20 at 09h 31m 46s.xml">
+      <configuration name="WangTest.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BigIntegerTest_test5 - 2020.07.12 at 22h 35m 45s.xml">
-      <configuration name="BigIntegerTest.test5" configurationId="JUnit" />
+    <history-entry file="WangTest_test1 - 2020.07.20 at 17h 00m 56s.xml">
+      <configuration name="WangTest.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BigIntegerTest_test5 - 2020.07.12 at 22h 38m 25s.xml">
-      <configuration name="BigIntegerTest.test5" configurationId="JUnit" />
+    <history-entry file="WangTest_test1 - 2020.07.20 at 17h 37m 57s.xml">
+      <configuration name="WangTest.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BigIntegerTest_test5 - 2020.07.12 at 22h 38m 58s.xml">
-      <configuration name="BigIntegerTest.test5" configurationId="JUnit" />
+    <history-entry file="WangTest_test1 - 2020.07.20 at 19h 44m 59s.xml">
+      <configuration name="WangTest.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BigIntegerTest_test5 - 2020.07.12 at 22h 39m 05s.xml">
-      <configuration name="BigIntegerTest.test5" configurationId="JUnit" />
+    <history-entry file="WangTest_test2 - 2020.12.14 at 17h 20m 07s.xml">
+      <configuration name="WangTest.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BigIntegerTest_test5 - 2020.07.12 at 22h 39m 22s.xml">
-      <configuration name="BigIntegerTest.test5" configurationId="JUnit" />
+    <history-entry file="WangTest_test2 - 2020.12.14 at 17h 20m 21s.xml">
+      <configuration name="WangTest.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BigIntegerTest_test5 - 2020.07.12 at 22h 39m 28s.xml">
-      <configuration name="BigIntegerTest.test5" configurationId="JUnit" />
+    <history-entry file="WangTest_test2 - 2020.12.14 at 17h 20m 34s.xml">
+      <configuration name="WangTest.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BigIntegerTest_test5 - 2020.07.12 at 22h 40m 01s.xml">
-      <configuration name="BigIntegerTest.test5" configurationId="JUnit" />
+    <history-entry file="WangTest_test2 - 2020.12.14 at 17h 20m 48s.xml">
+      <configuration name="WangTest.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BigIntegerTest_test5 - 2020.07.12 at 22h 40m 49s.xml">
-      <configuration name="BigIntegerTest.test5" configurationId="JUnit" />
+    <history-entry file="WangTest_test3 - 2020.12.15 at 11h 32m 03s.xml">
+      <configuration name="WangTest.test3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BigIntegerTest_test5 - 2020.07.12 at 22h 41m 00s.xml">
-      <configuration name="BigIntegerTest.test5" configurationId="JUnit" />
+    <history-entry file="WangTest_test3 - 2020.12.15 at 11h 32m 34s.xml">
+      <configuration name="WangTest.test3" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70810000" />
+    <option name="totallyTimeSpent" value="83935000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24061662" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2680965" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -453,7 +531,7 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32991204" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.37243402" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38709676" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.44868034" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -487,6 +565,8 @@
     <MESSAGE value="BigDecimal 不可变的带符号小数" />
     <MESSAGE value="ABigInteger 不可变的带符号整数" />
     <MESSAGE value="配置文件，请忽略" />
+    <MESSAGE value="操作结束时关闭流，释放资源。" />
+    <MESSAGE value="迭代器的方式，且判断单元格内容数据类型" />
     <MESSAGE value="Apache POI 操作 excel" />
     <option name="LAST_COMMIT_MESSAGE" value="Apache POI 操作 excel" />
   </component>
@@ -494,19 +574,19 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$PROJECT_DIR$/../../../software/Java/jdk1.8.0_131/src.zip!/java/math/BigDecimal.java</url>
+          <url>jar://D:/software/Java/jdk1.8.0_131/src.zip!/java/math/BigDecimal.java</url>
           <line>1724</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$PROJECT_DIR$/../../../software/Java/jdk1.8.0_131/src.zip!/java/math/BigDecimal.java</url>
+          <url>jar://D:/software/Java/jdk1.8.0_131/src.zip!/java/math/BigDecimal.java</url>
           <line>4610</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$PROJECT_DIR$/../../../software/Java/jdk1.8.0_131/src.zip!/java/math/BigDecimal.java</url>
+          <url>jar://D:/software/Java/jdk1.8.0_131/src.zip!/java/math/BigDecimal.java</url>
           <line>4529</line>
           <properties />
           <option name="timeStamp" value="6" />
@@ -515,77 +595,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/4.1.0/poi-4.1.0-sources.jar!/org/apache/poi/hssf/record/BoundSheetRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="33" selection-start-line="33" selection-end-line="37" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/4.1.0/poi-4.1.0-sources.jar!/org/apache/poi/hssf/record/SSTRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="110" column="39" selection-start-line="110" selection-start-column="15" selection-end-line="110" selection-end-column="39" />
-          <folding>
-            <element signature="e#4121#4122#0" expanded="true" />
-            <element signature="e#4170#4171#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/4.1.0/poi-4.1.0-sources.jar!/org/apache/poi/hssf/record/StandardRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/4.1.0/poi-4.1.0-sources.jar!/org/apache/poi/hssf/record/BOFRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/4.1.0/poi-4.1.0-sources.jar!/org/apache/poi/hssf/eventusermodel/HSSFListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="23" selection-start-line="23" selection-end-line="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/4.1.0/poi-4.1.0-sources.jar!/org/apache/poi/hssf/usermodel/HSSFDataFormat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="77" column="24" selection-start-line="77" selection-start-column="24" selection-end-line="77" selection-end-column="24" />
-          <folding>
-            <element signature="e#3097#3098#0" expanded="true" />
-            <element signature="e#3158#3159#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/4.1.0/poi-4.1.0-sources.jar!/org/apache/poi/ss/usermodel/CellBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="264" column="16" selection-start-line="264" selection-start-column="16" selection-end-line="264" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/4.1.0/poi-4.1.0-sources.jar!/org/apache/poi/hssf/usermodel/HSSFCell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="761" selection-start-line="761" selection-end-line="766" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/4.1.0/poi-4.1.0-sources.jar!/org/apache/poi/ss/usermodel/FormulaError.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="89" column="4" selection-start-line="89" selection-start-column="4" selection-end-line="89" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/4.1.0/poi-4.1.0.jar!/org/apache/poi/ss/usermodel/FormulaError.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -629,13 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/4.1.0/poi-4.1.0-sources.jar!/org/apache/poi/ss/usermodel/Row.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2280">
-          <caret line="135" selection-start-line="135" selection-end-line="138" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/4.1.0/poi-4.1.0-sources.jar!/org/apache/poi/ss/usermodel/Workbook.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3686">
@@ -643,38 +645,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/4.1.0/poi-4.1.0-sources.jar!/org/apache/poi/ss/usermodel/Sheet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/4.1.0/poi-4.1.0-sources.jar!/org/apache/poi/ss/usermodel/CellType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="25" column="20" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/4.1.0/poi-4.1.0-sources.jar!/org/apache/poi/ss/usermodel/Cell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="78" column="49" lean-forward="true" selection-start-line="78" selection-start-column="49" selection-end-line="78" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../software/Java/jdk1.8.0_131/src.zip!/java/util/Formatter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="2492" column="65" lean-forward="true" selection-start-line="2492" selection-start-column="65" selection-end-line="2492" selection-end-column="65" />
-          <folding>
-            <element signature="e#101735#101736#0" expanded="true" />
-            <element signature="e#101781#101782#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://D:/software/Java/jdk1.8.0_131/src.zip!/java/util/Formatter.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9-sources.jar!/org/apache/commons/lang3/math/NumberUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
@@ -682,29 +653,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../software/Java/jdk1.8.0_131/src.zip!/java/util/Objects.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="57" column="26" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
-          <folding>
-            <element signature="e#1410#1411#0" expanded="true" />
-            <element signature="e#1471#1472#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://D:/software/Java/jdk1.8.0_131/src.zip!/java/util/Objects.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9-sources.jar!/org/apache/commons/lang3/ObjectUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="295" column="61" lean-forward="true" selection-start-line="295" selection-start-column="61" selection-end-line="295" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
         </state>
       </provider>
     </entry>
@@ -726,45 +679,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../software/Java/jdk1.8.0_131/src.zip!/java/text/Format.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="155" column="24" selection-start-line="155" selection-start-column="24" selection-end-line="155" selection-end-column="24" />
-          <folding>
-            <element signature="e#5542#5543#0" expanded="true" />
-            <element signature="e#5629#5630#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../software/Java/jdk1.8.0_131/src.zip!/java/text/NumberFormat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="235" column="24" selection-start-line="235" selection-start-column="24" selection-end-line="235" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../software/Java/jdk1.8.0_131/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="2904" column="3" lean-forward="true" selection-start-line="2904" selection-start-column="3" selection-end-line="2933" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../software/Java/jdk1.8.0_131/src.zip!/java/lang/Long.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="1558" selection-start-line="1558" selection-end-line="1558" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../software/Java/jdk1.8.0_131/src.zip!/java/lang/reflect/InvocationTargetException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://D:/software/Java/jdk1.8.0_131/src.zip!/java/text/Format.java" />
+    <entry file="jar://D:/software/Java/jdk1.8.0_131/src.zip!/java/text/NumberFormat.java" />
+    <entry file="jar://D:/software/Java/jdk1.8.0_131/src.zip!/java/lang/String.java" />
+    <entry file="jar://D:/software/Java/jdk1.8.0_131/src.zip!/java/lang/Long.java" />
+    <entry file="jar://D:/software/Java/jdk1.8.0_131/src.zip!/java/lang/reflect/InvocationTargetException.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.13/junit-4.13.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -786,54 +705,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../software/Java/jdk1.8.0_131/src.zip!/java/math/MathContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1865">
-          <caret line="181" column="31" selection-start-line="181" selection-start-column="31" selection-end-line="181" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../software/Java/jdk1.8.0_131/src.zip!/java/math/BigDecimal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="1315" column="50" lean-forward="true" selection-start-line="1315" selection-start-column="50" selection-end-line="1315" selection-end-column="50" />
-          <folding>
-            <element signature="e#67889#67890#0" expanded="true" />
-            <element signature="e#67953#67954#0" expanded="true" />
-            <element signature="e#91887#91888#0" expanded="true" />
-            <element signature="e#91914#91915#0" expanded="true" />
-            <element signature="e#116291#116292#0" expanded="true" />
-            <element signature="e#116348#116349#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://D:/software/Java/jdk1.8.0_131/src.zip!/java/math/MathContext.java" />
+    <entry file="jar://D:/software/Java/jdk1.8.0_131/src.zip!/java/math/BigDecimal.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wmx/math/BigDecimalUtils.java" />
-    <entry file="jar://$PROJECT_DIR$/../../../software/Java/jdk1.8.0_131/src.zip!/java/math/RoundingMode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-320">
-          <caret line="218" column="4" selection-start-line="218" selection-start-column="4" selection-end-line="218" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../software/Java/jdk1.8.0_131/src.zip!/java/lang/Double.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="503" lean-forward="true" selection-start-line="503" selection-end-line="503" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../software/Java/jdk1.8.0_131/src.zip!/java/util/Random.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="134" column="11" selection-start-line="134" selection-start-column="11" selection-end-line="134" selection-end-column="11" />
-          <folding>
-            <element signature="e#3504#3505#0" expanded="true" />
-            <element signature="e#3562#3563#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://D:/software/Java/jdk1.8.0_131/src.zip!/java/math/RoundingMode.java" />
+    <entry file="jar://D:/software/Java/jdk1.8.0_131/src.zip!/java/lang/Double.java" />
+    <entry file="jar://D:/software/Java/jdk1.8.0_131/src.zip!/java/util/Random.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wmx/math/BigIntegerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="518">
@@ -844,17 +721,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../software/Java/jdk1.8.0_131/src.zip!/java/math/BigInteger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12179">
-          <caret line="680" selection-start-line="680" selection-end-line="689" selection-end-column="27" />
-          <folding>
-            <element signature="e#23600#23601#0" expanded="true" />
-            <element signature="e#23649#23650#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://D:/software/Java/jdk1.8.0_131/src.zip!/java/math/BigInteger.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wmx/math/BigDecimalTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -865,65 +732,134 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wmx/poi/test/HSSFReadWrite.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wmx/poi/test/ExcelReadFile.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wmx/poi/test/EventExample.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wmx/poi/test/HSSFReadWrite.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wmx/poi/util/PPTXUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-356">
-          <caret line="182" column="44" lean-forward="true" selection-start-line="182" selection-start-column="44" selection-end-line="182" selection-end-column="44" />
+        <state relative-caret-position="304">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/4.1.0/poi-4.1.0-sources.jar!/org/apache/poi/ss/usermodel/Sheet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="374" column="31" selection-start-line="374" selection-start-column="4" selection-end-line="374" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/4.1.0/poi-4.1.0-sources.jar!/org/apache/poi/ss/usermodel/Row.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="208" selection-start-line="208" selection-end-line="209" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/4.1.0/poi-4.1.0-sources.jar!/org/apache/poi/ss/usermodel/FormulaError.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="25" column="65" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/4.1.0/poi-4.1.0-sources.jar!/org/apache/poi/ss/usermodel/Cell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/software/Java/jdk1.8.0_131/src.zip!/java/util/LinkedHashMap.java" />
+    <entry file="jar://D:/software/Java/jdk1.8.0_131/src.zip!/java/util/Map.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9-sources.jar!/org/apache/commons/lang3/StringUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2337">
+          <caret line="147" column="31" selection-start-line="147" selection-start-column="31" selection-end-line="147" selection-end-column="31" />
+          <folding>
+            <element signature="e#20199#20200#0" expanded="true" />
+            <element signature="e#20254#20255#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/4.1.0/poi-4.1.0-sources.jar!/org/apache/poi/ss/usermodel/CellType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wmx/poi/test/excel/ExcelWriteTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wmx/poi/test/ExcelReadFile.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wmx/poi/test/excel/ExcelReadTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-902">
-          <caret line="154" column="35" selection-start-line="154" selection-start-column="35" selection-end-line="154" selection-end-column="35" />
+        <state relative-caret-position="390">
+          <caret line="86" column="56" selection-start-line="86" selection-start-column="56" selection-end-line="86" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wmx/poi/test/EventExample.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wmx/poi/test/excel/ExcelReadTest2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-921">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#552#598#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wmx/poi/test/ExcelWriteTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-513">
-          <caret line="21" selection-start-line="21" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#755#779#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wmx/poi/test/ExcelReadTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1074">
-          <caret line="75" column="44" lean-forward="true" selection-start-line="75" selection-start-column="44" selection-end-line="75" selection-end-column="44" />
+        <state relative-caret-position="442">
+          <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wmx/poi/test/CellComments.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wmx/other/WangTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        <state relative-caret-position="120">
+          <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wmx/poi/test/excel/CellComments.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1178">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wmx/poi/util/PPT2PNGUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
         </state>
       </provider>
     </entry>
