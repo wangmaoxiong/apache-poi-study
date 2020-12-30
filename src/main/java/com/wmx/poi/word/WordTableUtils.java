@@ -64,7 +64,7 @@ public class WordTableUtils {
             for (int j = 0; j < bodyColSize; j++) {
                 Object[] objects = objectMap.values().toArray();
                 if (j < objects.length) {
-                    table.getRow(i + 1).getCell(j).setText(objects[j].toString());
+                    table.getRow(i + 1).getCell(j).setText((String) objects[j]);
                 }
             }
         }
