@@ -29,8 +29,8 @@ public class CustomHeadingStyle {
         XWPFDocument docxDocument = new XWPFDocument();
 
         // 老外自定义了一个名字，中文版的最好还是按照word给的标题名来，否则级别上可能会乱
-        addCustomHeadingStyle(docxDocument, "TS1", 1);
-        addCustomHeadingStyle(docxDocument, "TS2", 2);
+        addCustomHeadingStyle(docxDocument, "TS1", 0);
+        addCustomHeadingStyle(docxDocument, "TS2", 1);
 
         // 标题1
         XWPFParagraph paragraph = docxDocument.createParagraph();
@@ -69,7 +69,7 @@ public class CustomHeadingStyle {
      *
      * @param docxDocument ：目标文档
      * @param strStyleId   ：样式id，后期正文中的标题文本会通过样式id进行关联，而且样式名称会显示在文档的标题样式中
-     * @param headingLevel ：样式级别
+     * @param headingLevel ：样式级别，从0开始，一级标题是0，二级标题是1，依此类推
      */
     private static void addCustomHeadingStyle(XWPFDocument docxDocument, String strStyleId, int headingLevel) {
 
