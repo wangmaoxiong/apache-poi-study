@@ -459,7 +459,7 @@ public class ExcelWriteTest {
 
         //3）正文字体
         HSSFFont contentFont = workbook.createFont();
-        contentFont.setFontHeightInPoints((short) 11);
+        contentFont.setFontHeightInPoints((short) 11);//设置字体高度
         contentFont.setFontName("宋体");
         contentFont.setColor(HSSFColor.HSSFColorPredefined.BLACK.getIndex());
 
