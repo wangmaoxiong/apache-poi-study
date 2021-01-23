@@ -135,35 +135,9 @@
       <select />
     </treeState>
   </component>
-  <component name="RunManager" selected="Application.CustomHeadingStyle">
+  <component name="RunManager" selected="JUnit.ExcelWriteTest.completeExample1">
     <configuration name="CustomHeadingStyle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wmx.poi.word.CustomHeadingStyle" />
-      <module name="apache-poi-study" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wmx.poi.word.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SimpleDocumentWithHeader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wmx.poi.word.SimpleDocumentWithHeader" />
-      <module name="apache-poi-study" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wmx.poi.word.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SimpleTable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wmx.poi.word.SimpleTable" />
       <module name="apache-poi-study" />
       <extension name="coverage">
         <pattern>
@@ -201,13 +175,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ExcelWriteTest.completeExample1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="apache-poi-study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wmx.poi.test.excel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.wmx.poi.test.excel" />
+      <option name="MAIN_CLASS_NAME" value="com.wmx.poi.test.excel.ExcelWriteTest" />
+      <option name="METHOD_NAME" value="completeExample1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExcelWriteTest.createCell" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="apache-poi-study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wmx.poi.test.excel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.wmx.poi.test.excel" />
+      <option name="MAIN_CLASS_NAME" value="com.wmx.poi.test.excel.ExcelWriteTest" />
+      <option name="METHOD_NAME" value="createCell" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ExcelWriteTest.completeExample1" />
+        <item itemvalue="JUnit.ExcelWriteTest.createCell" />
         <item itemvalue="Application.CustomHeadingStyle" />
         <item itemvalue="Application.WordTableUtils" />
         <item itemvalue="Application.StyledTable" />
-        <item itemvalue="Application.SimpleTable" />
-        <item itemvalue="Application.SimpleDocumentWithHeader" />
       </list>
     </recent_temporary>
   </component>
