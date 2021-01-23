@@ -32,13 +32,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="efa1ddd9-d46d-4f1a-85e1-f350799929c3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/apache-poi-study.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="efa1ddd9-d46d-4f1a-85e1-f350799929c3" name="Default Changelist" comment="提升 junit 版本">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wmx/poi/test/excel/ExcelWriteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wmx/poi/test/excel/ExcelWriteTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,35 +131,9 @@
       <select />
     </treeState>
   </component>
-  <component name="RunManager" selected="JUnit.ExcelWriteTest.completeExample1">
+  <component name="RunManager" selected="JUnit.ExcelWriteTest.createSheet">
     <configuration name="CustomHeadingStyle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wmx.poi.word.CustomHeadingStyle" />
-      <module name="apache-poi-study" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wmx.poi.word.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StyledTable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wmx.poi.word.StyledTable" />
-      <module name="apache-poi-study" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wmx.poi.word.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WordTableUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wmx.poi.word.WordTableUtils" />
       <module name="apache-poi-study" />
       <extension name="coverage">
         <pattern>
@@ -207,13 +177,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ExcelWriteTest.createSheet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="apache-poi-study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wmx.poi.test.excel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.wmx.poi.test.excel" />
+      <option name="MAIN_CLASS_NAME" value="com.wmx.poi.test.excel.ExcelWriteTest" />
+      <option name="METHOD_NAME" value="createSheet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExcelWriteTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="apache-poi-study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wmx.poi.test.excel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.wmx.poi.test.excel" />
+      <option name="MAIN_CLASS_NAME" value="com.wmx.poi.test.excel.ExcelWriteTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ExcelWriteTest.createSheet" />
+        <item itemvalue="JUnit.ExcelWriteTest.test" />
         <item itemvalue="JUnit.ExcelWriteTest.completeExample1" />
         <item itemvalue="JUnit.ExcelWriteTest.createCell" />
         <item itemvalue="Application.CustomHeadingStyle" />
-        <item itemvalue="Application.WordTableUtils" />
-        <item itemvalue="Application.StyledTable" />
       </list>
     </recent_temporary>
   </component>
@@ -246,7 +248,7 @@
       <workItem from="1598490179462" duration="207000" />
       <workItem from="1607912874586" duration="2114000" />
       <workItem from="1609239277369" duration="25208000" />
-      <workItem from="1611411646905" duration="164000" />
+      <workItem from="1611411646905" duration="909000" />
     </task>
     <task id="LOCAL-00001" summary="BigDecimal 不可变的带符号小数">
       <created>1594542990656</created>
@@ -409,40 +411,22 @@
       <option name="project" value="LOCAL" />
       <updated>1609328873694</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="提升 junit 版本">
+      <created>1611411847005</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1611411847005</updated>
+    </task>
+    <task id="LOCAL-00025" summary="提升 junit 版本">
+      <created>1611412077584</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1611412077584</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="WangTest_test1 - 2020.07.20 at 09h 31m 46s.xml">
-      <configuration name="WangTest.test1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="WangTest_test1 - 2020.07.20 at 17h 00m 56s.xml">
-      <configuration name="WangTest.test1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="WangTest_test1 - 2020.07.20 at 17h 37m 57s.xml">
-      <configuration name="WangTest.test1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="WangTest_test1 - 2020.07.20 at 19h 44m 59s.xml">
-      <configuration name="WangTest.test1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="WangTest_test2 - 2020.12.14 at 17h 20m 07s.xml">
-      <configuration name="WangTest.test2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="WangTest_test2 - 2020.12.14 at 17h 20m 21s.xml">
-      <configuration name="WangTest.test2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="WangTest_test2 - 2020.12.14 at 17h 20m 34s.xml">
-      <configuration name="WangTest.test2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="WangTest_test2 - 2020.12.14 at 17h 20m 48s.xml">
-      <configuration name="WangTest.test2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="WangTest_test3 - 2020.12.15 at 11h 32m 03s.xml">
-      <configuration name="WangTest.test3" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="WangTest_test3 - 2020.12.15 at 11h 32m 34s.xml">
-      <configuration name="WangTest.test3" configurationId="JUnit" />
-    </history-entry>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
@@ -473,7 +457,30 @@
     <MESSAGE value="在 Word 中创建一个简单的表格，带样式" />
     <MESSAGE value="在 Word 中创建表格工具类" />
     <MESSAGE value="自定义标题样式" />
-    <option name="LAST_COMMIT_MESSAGE" value="自定义标题样式" />
+    <MESSAGE value="提升 junit 版本" />
+    <option name="LAST_COMMIT_MESSAGE" value="提升 junit 版本" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1557" height="236" key="GridCell.Tab.0.bottom" timestamp="1611412451433">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="236" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1611412451433" />
+    <state width="1557" height="236" key="GridCell.Tab.0.center" timestamp="1611412451433">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="236" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1611412451433" />
+    <state width="1557" height="236" key="GridCell.Tab.0.left" timestamp="1611412451433">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="236" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1611412451433" />
+    <state width="1557" height="236" key="GridCell.Tab.0.right" timestamp="1611412451433">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="236" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1611412451433" />
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1611411855185">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1611411855185" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
