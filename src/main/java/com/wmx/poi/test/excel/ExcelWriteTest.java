@@ -368,6 +368,7 @@ public class ExcelWriteTest {
 
     /**
      * 演示创建单元格
+     * 注意一行最多创建 256 列，否则生成的是个表格
      *
      * @throws IOException
      */
@@ -427,6 +428,7 @@ public class ExcelWriteTest {
 
     /**
      * 完整输出 excel 示例。有表头和正文
+     * 注意一行最多创建 256 列，否则生成的是个表格
      */
     @Test
     public void completeExample1() throws IOException {
