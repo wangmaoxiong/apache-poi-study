@@ -57,6 +57,11 @@ public class ExcelWriteTest {
         workbook.createSheet();
         //为第3张工作表设置名称，索引从0开始
         workbook.setSheetName(2, "VIP客户信息");
+
+        //获取到第2个工作表，然后创建第一个单元格，并设置内容
+        //工作表必须先存在，否则异常，类似数组下标越界
+        workbook.getSheetAt(1).createRow(0).createCell(0).setCellValue("蚩尤后裔");
+
         //写入到输出流
         FileOutputStream fileOut = new FileOutputStream(outPath);
         workbook.write(fileOut);
