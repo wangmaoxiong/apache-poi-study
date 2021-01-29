@@ -18,7 +18,7 @@ import java.io.IOException;
 import java.util.*;
 
 /**
- * Excel 写测试类
+ * Excel 写文件测试类
  * 官网在线示例地址：https://svn.apache.org/repos/asf/poi/trunk/src/examples/src/org/apache/poi/hssf/usermodel/examples/
  */
 @SuppressWarnings("all")
@@ -40,7 +40,7 @@ public class ExcelWriteTest {
     }
 
     /**
-     * 创建作表（sheet）
+     * 演示创建工作表（sheet）
      *
      * @throws IOException
      */
@@ -48,12 +48,14 @@ public class ExcelWriteTest {
     public void createSheet() throws IOException {
         //创建工作簿对象
         HSSFWorkbook workbook = new HSSFWorkbook();
-        //创建工作表，默认为0，即第一张工作表
+        //创建第1张工作表，指定工作表的名称
         workbook.createSheet("手机采购表");
-        //继续创建第二张工作表
+        //创建第2张工作表，指定工作表的名称
+        workbook.createSheet("零部件采购表");
+        //创建第3张工作表，可以在后期指定工作表的名称
         workbook.createSheet();
-        //为第二张工作表设置名称
-        workbook.setSheetName(1, "VIP客户信息");
+        //为第3张工作表设置名称，索引从0开始
+        workbook.setSheetName(2, "VIP客户信息");
         //写入到输出流
         FileOutputStream fileOut = new FileOutputStream(outPath);
         workbook.write(fileOut);
@@ -397,6 +399,10 @@ public class ExcelWriteTest {
         workbook.write(fileOut);
     }
 
+    /**
+     * 设置单元格边框样式
+     * @throws IOException
+     */
     @Test
     public void test() throws IOException {
         HSSFWorkbook wb = new HSSFWorkbook();
@@ -455,7 +461,7 @@ public class ExcelWriteTest {
 
         //3）正文字体
         HSSFFont contentFont = workbook.createFont();
-        contentFont.setFontHeightInPoints((short) 11);
+        contentFont.setFontHeightInPoints((short) 11);//设置字体高度
         contentFont.setFontName("宋体");
         contentFont.setColor(HSSFColor.HSSFColorPredefined.BLACK.getIndex());
 
