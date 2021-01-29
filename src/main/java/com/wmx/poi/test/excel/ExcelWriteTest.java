@@ -6,6 +6,7 @@ import org.apache.poi.hssf.util.HSSFColor;
 import org.apache.poi.poifs.filesystem.POIFSFileSystem;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.ss.util.CellRangeAddress;
+import org.apache.poi.ss.util.CellRangeAddressList;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -401,6 +402,7 @@ public class ExcelWriteTest {
 
     /**
      * 设置单元格边框样式
+     *
      * @throws IOException
      */
     @Test
@@ -508,6 +510,40 @@ public class ExcelWriteTest {
         workbook.write(out);
         out.close();
         workbook.close();
+    }
+
+    /**
+     * 演示为单元格设置下拉选项
+     *
+     * @throws IOException
+     */
+    @Test
+    public void dropDowns() throws IOException {
+        HSSFWorkbook workbook = new HSSFWorkbook();
+        HSSFSheet sheet = workbook.createSheet("new sheet");
+
+        //创建第1行，行索引从0开始
+        HSSFRow row = sheet.createRow(0);
+        //创建一个单元格并在其中输入值，0 表示第1列，值不能为 null
+        row.createCell(0).setCellValue("国籍");
+
+        String[] dropDowns = {"中国", "美国", "英国", "加拿大", "法国"};
+
+        // 创建"数据验证约束"
+        DVConstraint dvConstraint = DVConstraint.createExplicitListConstraint(dropDowns);
+
+        //单元格范围地址列表由一个包含范围数目的字段和范围地址列表组成。
+        //四个参数分别是：起始行、终止行、起始列、终止列
+        CellRangeAddressList cellRangeAddressList = new CellRangeAddressList(0, 10, 0, 0);
+
+        //创建数据验证单元格的实用程序类
+        HSSFDataValidation dataValidation = new HSSFDataValidation(cellRangeAddressList, dvConstraint);
+        //为工作簿设置数据验证对象
+        sheet.addValidationData(dataValidation);
+
+        //输出文件
+        FileOutputStream fileOut = new FileOutputStream(outPath);
+        workbook.write(fileOut);
     }
 
     private List<List<Object>> contentData() {
