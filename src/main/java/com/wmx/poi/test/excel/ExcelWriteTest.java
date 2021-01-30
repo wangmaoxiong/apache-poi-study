@@ -7,6 +7,7 @@ import org.apache.poi.poifs.filesystem.POIFSFileSystem;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.ss.util.CellRangeAddress;
 import org.apache.poi.ss.util.CellRangeAddressList;
+import org.apache.poi.xssf.usermodel.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -55,12 +56,17 @@ public class ExcelWriteTest {
         workbook.createSheet("零部件采购表");
         //创建第3张工作表，可以在后期指定工作表的名称
         workbook.createSheet();
+
+        //、将第一个工作表隐藏，注意：即使被隐藏，它仍然占着此索引，仍然可以对他设置和读取内容，它仅仅只是不显示而已。
+        workbook.setSheetHidden(0, true);
+
         //为第3张工作表设置名称，索引从0开始
         workbook.setSheetName(2, "VIP客户信息");
 
         //获取到第2个工作表，然后创建第一个单元格，并设置内容
         //工作表必须先存在，否则异常，类似数组下标越界
         workbook.getSheetAt(1).createRow(0).createCell(0).setCellValue("蚩尤后裔");
+
 
         //写入到输出流
         FileOutputStream fileOut = new FileOutputStream(outPath);
@@ -519,6 +525,7 @@ public class ExcelWriteTest {
 
     /**
      * 演示为单元格设置下拉选项
+     * 当下拉选项内容长度不是太长时采用此方法。
      *
      * @throws IOException
      */
@@ -551,6 +558,87 @@ public class ExcelWriteTest {
         HSSFDataValidation dataValidation = new HSSFDataValidation(cellRangeAddressList, dvConstraint);
         //为工作簿设置数据验证对象
         sheet.addValidationData(dataValidation);
+
+        //输出文件
+        FileOutputStream fileOut = new FileOutputStream(outPath);
+        workbook.write(fileOut);
+    }
+
+    @Test
+    public void dropDowns2() throws IOException {
+        HSSFWorkbook workbook = new HSSFWorkbook();
+        HSSFSheet sheet = workbook.createSheet("天上人间");
+
+        //创建第1行，行索引从0开始
+        HSSFRow row = sheet.createRow(0);
+        //创建一个单元格并在其中输入值，0 表示第1列，值不能为 null
+        row.createCell(0).setCellValue("年龄");
+
+        //获取下拉选项的值
+        String[] dropDowns = this.getDropDowns();
+
+        // 创建一个新的工作表，这个工作表可以让它显示着，不过通常会让它隐藏，这样用户就看不到这个存储下拉选项的工作表
+        // 被关联的工作表的名称最好不要有空格，否则关联时容易找不到目标数据而报错
+        String hiddenSheet = "hiddenSheet";
+        HSSFSheet hidden_sheet = workbook.createSheet(hiddenSheet);
+        // 设置指定索引的工作表显示或者隐藏，true 是隐藏，flase 是显示
+        workbook.setSheetHidden(1, true);
+        // 在新的工作表中创建下拉选项的值，为了关联的时候方便，这里的值让它竖着创建内容。即第一列、第二列、...
+        for (int i = 0; i < dropDowns.length; i++) {
+            hidden_sheet.createRow(i).createCell(0).setCellValue(dropDowns[i]);
+        }
+
+        /**
+         * 设置公式引用
+         * 1、格式："工作表名称!$起始列号$起始行号:$结束列号$结束行号"
+         * 2、观察 excel 表格会发现：excel 的列使用的是大写字母，如：A、B、C、D\...X、Y、Z、AA、AB、AC、...AX、AY、AZ、BA、BB、BC...以此类推
+         *     excel 的行使用的阿拉伯数字，如，1、2、3、...8、9、10、11、12、...、100、101、102...、999、1000、1001、...
+         * 3、现在的目的是指定某些单元格的下拉选项引用文件中其它位置的数据，如：
+         *     sheet2!$A$1:$A$50 ：表示引用名称为 sheet2 的工作表中 A1到A50 之间的数据，包括A1和A50，也就是第1列前50个单元格的内容
+         *     sheet3!$B$2:$B$35 ：表示引用名称为 sheet2 的工作表中 B2到B35 之间的数据，包括B2和B35，也就是第2列中第[2,35]的单元格内容
+         */
+        String formula = hiddenSheet + "!$A$1:$A$" + dropDowns.length;
+        HSSFDataValidationHelper dvHelper = new HSSFDataValidationHelper(sheet);
+        DataValidationConstraint dataValidationConstraint = dvHelper.createFormulaListConstraint(formula);
+        CellRangeAddressList addressList_agent = new CellRangeAddressList(1, 50, 0, 0);
+        DataValidation validation_agent = dvHelper.createValidation(dataValidationConstraint, addressList_agent);
+        validation_agent.setShowErrorBox(true);
+        sheet.addValidationData(validation_agent);
+
+        //输出文件
+        FileOutputStream fileOut = new FileOutputStream(outPath);
+        workbook.write(fileOut);
+    }
+
+    @Test
+    public void dropDowns3() throws IOException {
+        List<String> dropDownLsit = new ArrayList<>();
+        for (int i = 0; i < 50; i++) {
+            dropDownLsit.add("中国" + i);
+        }
+        String[] dropDowns = dropDownLsit.toArray(new String[dropDownLsit.size()]);
+
+        XSSFWorkbook workbook = new XSSFWorkbook();
+        XSSFSheet sheet = workbook.createSheet("天上人间");
+        XSSFDataValidationHelper dvHelper = new XSSFDataValidationHelper(sheet);
+
+
+        // 创建一个隐藏域，users是下拉列表数组
+        String hiddenSheet = "hiddenSheet";
+        XSSFSheet hidden_sheet = workbook.createSheet(hiddenSheet);
+        //wb.setSheetHidden(1, true);
+        for (int i = 0; i < dropDowns.length; i++) {
+            hidden_sheet.createRow(i).createCell(0).setCellValue(dropDowns[i]);
+        }
+
+        // 用公式去引用，隐藏域中的 A1:A user.length 就是上面设置的格子
+        String formula = hiddenSheet + "!$A$1:$A$" + dropDowns.length;
+
+        XSSFDataValidationConstraint dataValidationConstraint = (XSSFDataValidationConstraint) dvHelper.createFormulaListConstraint(formula);
+        CellRangeAddressList addressList_agent = new CellRangeAddressList(1, 50, 0, 0);
+        XSSFDataValidation validation_agent = (XSSFDataValidation) dvHelper.createValidation(dataValidationConstraint, addressList_agent);
+        validation_agent.setShowErrorBox(true);
+        sheet.addValidationData(validation_agent);
 
         //输出文件
         FileOutputStream fileOut = new FileOutputStream(outPath);
@@ -591,6 +679,22 @@ public class ExcelWriteTest {
         workbook.write(fileOut);
     }
 
+    private String[] getDropDowns() {
+        //下拉框的内容长度有一定的大小限制，如果超过，则抛出异常：
+        //IllegalArgumentException: String literals in formulas can't be bigger than 255 characters ASCII
+        List<String> dropDownLsit = new ArrayList<>();
+        for (int i = 0; i < 50; i++) {
+            dropDownLsit.add("中国" + i);
+        }
+        String[] dropDowns = dropDownLsit.toArray(new String[dropDownLsit.size()]);
+        return dropDowns;
+    }
+
+    /**
+     * 生成表格测试内容
+     *
+     * @return
+     */
     private List<List<Object>> contentData() {
         List<List<Object>> contentList = new ArrayList<>(8);
         for (int i = 0; i < 20; i++) {
