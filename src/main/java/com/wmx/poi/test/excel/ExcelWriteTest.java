@@ -532,7 +532,13 @@ public class ExcelWriteTest {
         //创建一个单元格并在其中输入值，0 表示第1列，值不能为 null
         row.createCell(0).setCellValue("国籍");
 
-        String[] dropDowns = {"中国", "美国", "英国", "加拿大", "法国"};
+        //下拉框的内容长度有一定的大小限制，如果超过，则抛出异常：
+        //IllegalArgumentException: String literals in formulas can't be bigger than 255 characters ASCII
+        List<String> dropDownLsit = new ArrayList<>();
+        for (int i = 0; i < 50; i++) {
+            dropDownLsit.add("中国" + i);
+        }
+        String[] dropDowns = dropDownLsit.toArray(new String[dropDownLsit.size()]);
 
         // 创建"显式列表约束"
         DVConstraint dvConstraint = DVConstraint.createExplicitListConstraint(dropDowns);
