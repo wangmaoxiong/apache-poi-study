@@ -13,10 +13,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import javax.swing.filechooser.FileSystemView;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.util.*;
 
 /**
@@ -415,12 +412,64 @@ public class ExcelWriteTest {
     }
 
     /**
+     * 演示设置列宽与行高
+     *
+     * @throws IOException
+     */
+    @Test
+    public void setColWidth() throws IOException {
+        Workbook workbook = new XSSFWorkbook();
+
+        //方式一：为指定的列设置统一的列框
+        Sheet sheet1 = workbook.createSheet("sheet1");
+        Row row1 = sheet1.createRow(0);
+        for (int i = 0; i < 10; i++) {
+            row1.createCell(i).setCellValue("列" + (i + 1));
+            //设置指定列的宽度，通过反复测试后可以估算出，270 乘以 xx，这个 xx 基本对应 excel 文件中的实际列宽
+            sheet1.setColumnWidth(i, 15 * 270);
+        }
+
+        //方式二：为整个工作表设置统一的列宽与行高
+        Sheet sheet2 = workbook.createSheet("sheet2");
+        Row row2 = sheet2.createRow(0);
+        for (int i = 0; i < 10; i++) {
+            row2.createCell(i).setCellValue("列" + (i + 1));
+        }
+        //设置整个工作表的默认行高，经过反复测试，20 乘以 xx，这个xx基本对应 excel 文件中的实际行高
+        sheet2.setDefaultRowHeight((short) (15 * 20));
+        //设置整个工作表的默认列宽，设置的值基本对应 excel 文件中的实际列宽
+        sheet2.setDefaultColumnWidth((short) 15);
+
+        //方式三：根据标题内容长度为不同的列设置不同的列宽
+        Sheet sheet3 = workbook.createSheet("sheet3");
+        String[] titles = {"序号", "出身日期", "在职人员来源", "进入本单位时间", "级别（技术等级、薪级）工资", "公务卡开户银行", "退休费"};
+        Row row3 = sheet3.createRow(0);
+        //设置每列的宽度（列宽）、根据标题的内容长度不同，设置不同的列宽。
+        for (int i = 0; i < titles.length; i++) {
+            row3.createCell(i).setCellValue(titles[i]);
+            if (titles[i].length() <= 2) {
+                sheet3.setColumnWidth(i, 10 * 270);
+            } else if (titles[i].length() <= 4) {
+                sheet3.setColumnWidth(i, 16 * 270);
+            } else if (titles[i].length() <= 6) {
+                sheet3.setColumnWidth(i, 20 * 270);
+            } else {
+                sheet3.setColumnWidth(i, 25 * 270);
+            }
+        }
+
+        //写入到文件
+        FileOutputStream fileOut = new FileOutputStream(outPath + "x");
+        workbook.write(fileOut);
+    }
+
+    /**
      * 设置单元格边框样式
      *
      * @throws IOException
      */
     @Test
-    public void test() throws IOException {
+    public void CellStyleTest() throws IOException {
         HSSFWorkbook wb = new HSSFWorkbook();
         HSSFSheet sheet = wb.createSheet("new sheet");
 
@@ -462,7 +511,7 @@ public class ExcelWriteTest {
         HSSFSheet sheet = workbook.createSheet();
         workbook.setSheetName(0, "华为手机采购表");
 
-        //设置每列的宽度
+        //设置每列的宽度（列宽）
         for (int i = 0; i < headList.size(); i++) {
             sheet.setColumnWidth(i, 16 * 256);
         }
@@ -727,6 +776,11 @@ public class ExcelWriteTest {
         workbook.write(fileOut);
     }
 
+    /**
+     * 获取下拉选项的值
+     *
+     * @return
+     */
     private String[] getDropDowns() {
         //下拉框的内容长度有一定的大小限制，如果超过，则抛出异常：
         //IllegalArgumentException: String literals in formulas can't be bigger than 255 characters ASCII
