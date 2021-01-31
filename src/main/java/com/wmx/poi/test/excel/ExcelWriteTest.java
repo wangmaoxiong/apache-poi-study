@@ -22,6 +22,8 @@ import java.util.*;
 /**
  * Excel 写文件测试类
  * 官网在线示例地址：https://svn.apache.org/repos/asf/poi/trunk/src/examples/src/org/apache/poi/hssf/usermodel/examples/
+ *
+ *
  */
 @SuppressWarnings("all")
 public class ExcelWriteTest {
@@ -66,7 +68,6 @@ public class ExcelWriteTest {
         //获取到第2个工作表，然后创建第一个单元格，并设置内容
         //工作表必须先存在，否则异常，类似数组下标越界
         workbook.getSheetAt(1).createRow(0).createCell(0).setCellValue("蚩尤后裔");
-
 
         //写入到输出流
         FileOutputStream fileOut = new FileOutputStream(outPath);
@@ -524,7 +525,7 @@ public class ExcelWriteTest {
     }
 
     /**
-     * 演示为单元格设置下拉选项
+     * 演示为单元格设置下拉选项 方式 1
      * 当下拉选项内容长度不是太长时采用此方法。
      *
      * @throws IOException
@@ -564,6 +565,14 @@ public class ExcelWriteTest {
         workbook.write(fileOut);
     }
 
+    /**
+     * 演示为单元格设置下拉选项 方式 2。
+     * 有效解决下拉选项内容太长的问题，思路是：不再为下拉框直接设置内容，而是将内容设置在其它地方，比如其它 sheet 中，然后通过引用的方式进行关联，
+     * 这样无论下拉选项有多少内容都不会再报错。
+     * 编码上与方式1基本类似，只是稍有变化。
+     *
+     * @throws IOException
+     */
     @Test
     public void dropDowns2() throws IOException {
         HSSFWorkbook workbook = new HSSFWorkbook();
@@ -598,11 +607,18 @@ public class ExcelWriteTest {
          *     sheet3!$B$2:$B$35 ：表示引用名称为 sheet2 的工作表中 B2到B35 之间的数据，包括B2和B35，也就是第2列中第[2,35]的单元格内容
          */
         String formula = hiddenSheet + "!$A$1:$A$" + dropDowns.length;
+        //用于处理数据验证的助手。HSSFDataValidationHelper 支持 .xls 格式，XSSFDataValidationHelper 支持 .xlsx 格式
         HSSFDataValidationHelper dvHelper = new HSSFDataValidationHelper(sheet);
+        //创建公式列表约束
         DataValidationConstraint dataValidationConstraint = dvHelper.createFormulaListConstraint(formula);
-        CellRangeAddressList addressList_agent = new CellRangeAddressList(1, 50, 0, 0);
-        DataValidation validation_agent = dvHelper.createValidation(dataValidationConstraint, addressList_agent);
+        //单元格范围地址列表由一个包含范围数目的字段和范围地址列表组成。
+        //四个参数分别是：起始行、终止行、起始列、终止列
+        CellRangeAddressList cellRangeAddressList = new CellRangeAddressList(1, 50, 0, 0);
+        //创建验证
+        DataValidation validation_agent = dvHelper.createValidation(dataValidationConstraint, cellRangeAddressList);
+        //当输入下拉选项以外的值时，是否提示错误，默认为 true
         validation_agent.setShowErrorBox(true);
+        //为工作簿设置数据验证对象
         sheet.addValidationData(validation_agent);
 
         //输出文件
